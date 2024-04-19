@@ -33,8 +33,6 @@ data.forEach((row, rowId) => {
 gears.forEach(gear => {
     let validGear = [];
 
-    // console.log("Checking:", gear);
-
     for (let i = -1; i <= 1; i++) {
         if(gear[1] == 0 && i == -1) continue;
         if(gear[1] == (data[gear[0]].length - 1)) continue;
@@ -64,7 +62,6 @@ gears.forEach(gear => {
     if(validGear.length >= 2) {
         let helper = null;
         validGear = validGear.filter(match => {
-            console.log(helper, match)
 
             if(helper == null) {
                 helper = match;
@@ -126,7 +123,6 @@ valid.forEach(gear => {
 
 
     let gearRatio = gearNumbers[0].value * gearNumbers[1].value;
-    console.log(gear, gearNumbers[0].value +"*"+ gearNumbers[1].value)
     result += gearRatio;
 
 })
