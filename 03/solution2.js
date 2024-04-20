@@ -132,7 +132,7 @@ console.log(result); // 91031374
 
 
 
-// Helper Function
+// Helper Functions
 function resetCurrentNumber() {
     return {
         value: "",
